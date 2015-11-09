@@ -42,6 +42,8 @@ cordova platform add android
 cordova build android
 ```
 
+> 注意: ionic 不支持中文路径，不然构建不成功
+
 cordova 插件添加
 
 ```
