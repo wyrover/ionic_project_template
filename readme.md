@@ -31,7 +31,35 @@ ionic platform add android
 ionic build android
 ```
 
+ionic 框架对 cordova 项目工程命令进行了包装，可以直接使用 crodova 命令
 
+cordova 工程创建
+
+```
+cordova create myapp
+cd myapp
+cordova platform add android
+cordova build android
+```
+
+cordova 插件添加
+
+```
+cordova plugin add org.apache.cordova.geolocation
+cordova plugin add org.apache.cordova.file
+cordova plugin add org.apache.cordova.dialogs
+cordova plugin add org.apache.cordova.device
+cordova plugin add org.apache.cordova.console
+cordova plugin add org.apache.cordova.camera
+```
+
+
+phoneGap 云端构建
+
+```
+phonegap remote build ios
+phonegap remote build android
+```
 
 
 ## 构建，测试，部署
@@ -520,3 +548,9 @@ myapp/
        |            /tabs.html
 
 ```
+
+
+
+## links
+
+- https://github.com/ccoenraets?tab=repositories
