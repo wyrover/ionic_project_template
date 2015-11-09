@@ -87,6 +87,11 @@ cd myapp
 ionic serve
 ```
 
+调试监听启动
+```
+ionic serve --lab
+```
+
 ## Ionic 项目目录
 
 ```
@@ -684,4 +689,16 @@ node server
 - http://www.cnblogs.com/parry/p/issues_about_build_hybrid_app_with_ionic.html
 - http://www.cnblogs.com/powertoolsteam/p/4775059.html    项目完整流程
 - http://www.cnblogs.com/cube/p/4086645.html          使用内联模板
--
+- http://www.cnblogs.com/zxyun/p/4733723.html
+- http://www.cnblogs.com/itman70s/p/4876207.html
+- http://www.cnblogs.com/itman70s/p/ionic_bars.html     舵式导航
+- http://www.cnblogs.com/ailen226/p/ionic.html          sqlite 操作
+- http://www.cnblogs.com/ailen226/p/4626166.html         下拉刷新
+- http://www.cnblogs.com/huizhiwang/p/4465634.html         列表
+- http://www.cnblogs.com/huizhiwang/p/4468066.html         基本组件
+- http://www.cnblogs.com/yshyee/p/4569583.html          签名
+- http://www.cnblogs.com/xieyier/p/4071123.html        修改图标
+- http://www.cnblogs.com/xieyier/category/614439.html
+- https://github.com/zachsoft/gulp-angular-templatecache    生成 angular 模板缓存
+- https://thompsonemerson.github.io/ionic-collection/       ionic 教程
+- https://github.com/flavordaaave/ionic-better-structure        更好的项目目录结构
