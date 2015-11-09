@@ -55,6 +55,12 @@ cordova plugin add org.apache.cordova.console
 cordova plugin add org.apache.cordova.camera
 ```
 
+插件删除
+
+```
+cordova plugin remove (输入插件地址)  移除插件
+```
+
 
 phoneGap 云端构建
 
@@ -577,6 +583,97 @@ node server
 - http://localhost:5000/sessions/1 (for information about a specific session )
 
 
+
+## 开发
+
+新建立的应用程序框架，关注点在以下几点：
+
+1. 路由
+2. 视图              试图需要了解 ionic 的组件
+3. 控制器            控制器里完成任务后状态的返回
+4. service           中间层可以放在 service.js
+5. cordova 插件      需要的 cordova 插件添加更新
+
+
+导航视图 ion-nav-view
+
+```
+<ion-nav-view>
+<!--模板内容将被插入此处-->
+</ion-nav-view>
+```
+
+模板视图 ion-view
+
+```
+<script id="..." type="text/ng-template">
+<ion-view>
+<!--模板视图内容-->
+</ion-view>
+</script>
+```
+
+导航栏 ion-nav-bar
+```
+<ion-nav-bar></ion-nav-bar>
+```
+
+回退按钮 ion-nav-back-button
+
+```
+<ion-nav-bar>
+<ion-nav-back-button></ion-nav-back-button>
+</ion-nav-bar>
+```
+
+标题栏 ion-header-bar
+```
+<ion-header-bar>...</ion-header-bar>
+```
+
+页脚栏 : ion-footer-bar
+```
+<ion-footer-bar>...</ion-footer-bar>
+```
+
+内容区 ion-content
+
+```
+<ion-content>...</ion-content>
+```
+
+滚动框 ion-scroll
+
+```
+<ion-scroll>
+<!--content-->
+</ion-scroll>
+```
+
+拉动刷新 ion-refresher
+
+```
+<ion-refresher></ion-refresher>
+```
+
+滚动刷新 ion-infinite-scroll
+
+```
+<ion-infinite-scroll on-infinite="">...</ion-infinite-scroll>
+```
+
+
+定制样式
+
+```
+<ion-nav-back-button class="button-clear">
+<i class="icon ion-ios-arrow-back"></i> 返回
+</ion-nav-back-button>
+```
+
+
 ## links
 
 - https://github.com/ccoenraets?tab=repositories
+- http://www.cnblogs.com/parry/p/issues_about_build_hybrid_app_with_ionic.html
+- http://www.cnblogs.com/powertoolsteam/p/4775059.html
