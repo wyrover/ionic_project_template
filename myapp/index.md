@@ -1,0 +1,471 @@
+myapp/
+   | /.bowerrc
+   | /.editorconfig
+   | /.gitignore
+   | /bower.json
+   | /config.xml
+   | /gulpfile.js
+   | /index.md
+   | /ionic.project
+   | /package.json
+   |-- hooks/
+   |        /README.md
+   |   |-- after_prepare/
+   |   |                /010_add_platform_class.js
+   |-- plugins/
+   |          /fetch.json
+   |   |-- cordova-plugin-console/
+   |   |                         /CONTRIBUTING.md
+   |   |                         /LICENSE
+   |   |                         /NOTICE
+   |   |                         /package.json
+   |   |                         /plugin.xml
+   |   |                         /README.md
+   |   |                         /RELEASENOTES.md
+   |   |   |-- doc/
+   |   |   |   |-- de/
+   |   |   |   |     /index.md
+   |   |   |   |     /README.md
+   |   |   |   |-- es/
+   |   |   |   |     /index.md
+   |   |   |   |     /README.md
+   |   |   |   |-- fr/
+   |   |   |   |     /index.md
+   |   |   |   |     /README.md
+   |   |   |   |-- it/
+   |   |   |   |     /index.md
+   |   |   |   |     /README.md
+   |   |   |   |-- ja/
+   |   |   |   |     /index.md
+   |   |   |   |     /README.md
+   |   |   |   |-- ko/
+   |   |   |   |     /index.md
+   |   |   |   |     /README.md
+   |   |   |   |-- pl/
+   |   |   |   |     /index.md
+   |   |   |   |     /README.md
+   |   |   |   |-- ru/
+   |   |   |   |     /index.md
+   |   |   |   |-- zh/
+   |   |   |   |     /index.md
+   |   |   |   |     /README.md
+   |   |   |-- src/
+   |   |   |   |-- ios/
+   |   |   |   |      /CDVLogger.h
+   |   |   |   |      /CDVLogger.m
+   |   |   |   |-- ubuntu/
+   |   |   |   |         /console.cpp
+   |   |   |   |         /console.h
+   |   |   |   |-- wp/
+   |   |   |   |     /DebugConsole.cs
+   |   |   |-- tests/
+   |   |   |        /plugin.xml
+   |   |   |        /tests.js
+   |   |   |-- www/
+   |   |   |      /console-via-logger.js
+   |   |   |      /logger.js
+   |   |-- cordova-plugin-device/
+   |   |                        /CONTRIBUTING.md
+   |   |                        /LICENSE
+   |   |                        /NOTICE
+   |   |                        /package.json
+   |   |                        /plugin.xml
+   |   |                        /README.md
+   |   |                        /RELEASENOTES.md
+   |   |   |-- doc/
+   |   |   |   |-- de/
+   |   |   |   |     /index.md
+   |   |   |   |     /README.md
+   |   |   |   |-- es/
+   |   |   |   |     /index.md
+   |   |   |   |     /README.md
+   |   |   |   |-- fr/
+   |   |   |   |     /index.md
+   |   |   |   |     /README.md
+   |   |   |   |-- it/
+   |   |   |   |     /index.md
+   |   |   |   |     /README.md
+   |   |   |   |-- ja/
+   |   |   |   |     /index.md
+   |   |   |   |     /README.md
+   |   |   |   |-- ko/
+   |   |   |   |     /index.md
+   |   |   |   |     /README.md
+   |   |   |   |-- pl/
+   |   |   |   |     /index.md
+   |   |   |   |     /README.md
+   |   |   |   |-- ru/
+   |   |   |   |     /index.md
+   |   |   |   |-- zh/
+   |   |   |   |     /index.md
+   |   |   |   |     /README.md
+   |   |   |-- src/
+   |   |   |   |-- android/
+   |   |   |   |          /Device.java
+   |   |   |   |-- blackberry10/
+   |   |   |   |               /index.js
+   |   |   |   |-- browser/
+   |   |   |   |          /DeviceProxy.js
+   |   |   |   |-- firefoxos/
+   |   |   |   |            /DeviceProxy.js
+   |   |   |   |-- ios/
+   |   |   |   |      /CDVDevice.h
+   |   |   |   |      /CDVDevice.m
+   |   |   |   |-- tizen/
+   |   |   |   |        /DeviceProxy.js
+   |   |   |   |-- ubuntu/
+   |   |   |   |         /device.cpp
+   |   |   |   |         /device.h
+   |   |   |   |         /device.js
+   |   |   |   |-- windows/
+   |   |   |   |          /DeviceProxy.js
+   |   |   |   |-- wp/
+   |   |   |   |     /Device.cs
+   |   |   |-- tests/
+   |   |   |        /plugin.xml
+   |   |   |        /tests.js
+   |   |   |-- www/
+   |   |   |      /device.js
+   |   |-- cordova-plugin-splashscreen/
+   |   |                              /CONTRIBUTING.md
+   |   |                              /LICENSE
+   |   |                              /NOTICE
+   |   |                              /package.json
+   |   |                              /plugin.xml
+   |   |                              /README.md
+   |   |                              /RELEASENOTES.md
+   |   |   |-- doc/
+   |   |   |   |-- de/
+   |   |   |   |     /index.md
+   |   |   |   |     /README.md
+   |   |   |   |-- es/
+   |   |   |   |     /index.md
+   |   |   |   |     /README.md
+   |   |   |   |-- fr/
+   |   |   |   |     /index.md
+   |   |   |   |     /README.md
+   |   |   |   |-- it/
+   |   |   |   |     /index.md
+   |   |   |   |     /README.md
+   |   |   |   |-- ja/
+   |   |   |   |     /index.md
+   |   |   |   |     /README.md
+   |   |   |   |-- ko/
+   |   |   |   |     /index.md
+   |   |   |   |     /README.md
+   |   |   |   |-- pl/
+   |   |   |   |     /index.md
+   |   |   |   |     /README.md
+   |   |   |   |-- ru/
+   |   |   |   |     /index.md
+   |   |   |   |-- zh/
+   |   |   |   |     /index.md
+   |   |   |   |     /README.md
+   |   |   |-- src/
+   |   |   |   |-- android/
+   |   |   |   |          /SplashScreen.java
+   |   |   |   |-- blackberry10/
+   |   |   |   |               /index.js
+   |   |   |   |-- browser/
+   |   |   |   |          /SplashScreenProxy.js
+   |   |   |   |-- ios/
+   |   |   |   |      /CDVSplashScreen.h
+   |   |   |   |      /CDVSplashScreen.m
+   |   |   |   |      /CDVViewController+SplashScreen.h
+   |   |   |   |      /CDVViewController+SplashScreen.m
+   |   |   |   |-- tizen/
+   |   |   |   |        /SplashScreenProxy.js
+   |   |   |   |-- ubuntu/
+   |   |   |   |         /splashscreen.cpp
+   |   |   |   |         /splashscreen.h
+   |   |   |   |-- wp/
+   |   |   |   |     /ResolutionHelper.cs
+   |   |   |   |     /SplashScreen.cs
+   |   |   |-- tests/
+   |   |   |        /plugin.xml
+   |   |   |        /tests.js
+   |   |   |   |-- ios/
+   |   |   |   |      /package.json
+   |   |   |   |      /README.md
+   |   |   |       |-- CDVSplashScreenTest/
+   |   |   |       |                      /.npmignore
+   |   |   |       |   |-- CDVSplashScreenLibTests/
+   |   |   |       |   |                          /ImageNameTest.m
+   |   |   |       |   |                          /ImageNameTestDelegates.h
+   |   |   |       |   |                          /ImageNameTestDelegates.m
+   |   |   |       |   |                          /Info.plist
+   |   |   |       |   |-- CDVSplashScreenTest.xcodeproj/
+   |   |   |       |   |                                /project.pbxproj
+   |   |   |       |       |-- project.xcworkspace/
+   |   |   |       |       |                      /contents.xcworkspacedata
+   |   |   |       |       |   |-- xcshareddata/
+   |   |   |       |       |   |               /CDVSplashScreenTest.xccheckout
+   |   |   |       |       |-- xcshareddata/
+   |   |   |       |           |-- xcschemes/
+   |   |   |       |           |            /CDVSplashScreenLib.xcscheme
+   |   |   |       |           |            /CDVSplashScreenLibTests.xcscheme
+   |   |   |       |-- CDVSplashScreenTest.xcworkspace/
+   |   |   |       |                                  /contents.xcworkspacedata
+   |   |   |       |   |-- xcshareddata/
+   |   |   |       |   |               /CDVSplashScreenTest.xccheckout
+   |   |   |       |       |-- xcschemes/
+   |   |   |       |       |            /CordovaLib.xcscheme
+   |   |   |       |-- doc/
+   |   |   |           |-- de/
+   |   |   |           |     /README.md
+   |   |   |           |-- es/
+   |   |   |           |     /README.md
+   |   |   |           |-- fr/
+   |   |   |           |     /README.md
+   |   |   |           |-- it/
+   |   |   |           |     /README.md
+   |   |   |           |-- ja/
+   |   |   |           |     /README.md
+   |   |   |           |-- ko/
+   |   |   |           |     /README.md
+   |   |   |           |-- pl/
+   |   |   |           |     /README.md
+   |   |   |           |-- zh/
+   |   |   |           |     /README.md
+   |   |   |-- www/
+   |   |   |      /splashscreen.js
+   |   |       |-- windows/
+   |   |       |          /SplashScreenProxy.js
+   |   |-- cordova-plugin-statusbar/
+   |   |                           /CONTRIBUTING.md
+   |   |                           /LICENSE
+   |   |                           /NOTICE
+   |   |                           /package.json
+   |   |                           /plugin.xml
+   |   |                           /README.md
+   |   |                           /RELEASENOTES.md
+   |   |   |-- doc/
+   |   |   |   |-- de/
+   |   |   |   |     /index.md
+   |   |   |   |     /README.md
+   |   |   |   |-- es/
+   |   |   |   |     /index.md
+   |   |   |   |     /README.md
+   |   |   |   |-- fr/
+   |   |   |   |     /index.md
+   |   |   |   |     /README.md
+   |   |   |   |-- it/
+   |   |   |   |     /index.md
+   |   |   |   |     /README.md
+   |   |   |   |-- ja/
+   |   |   |   |     /index.md
+   |   |   |   |     /README.md
+   |   |   |   |-- ko/
+   |   |   |   |     /index.md
+   |   |   |   |     /README.md
+   |   |   |   |-- pl/
+   |   |   |   |     /index.md
+   |   |   |   |     /README.md
+   |   |   |   |-- ru/
+   |   |   |   |     /index.md
+   |   |   |   |-- zh/
+   |   |   |   |     /index.md
+   |   |   |   |     /README.md
+   |   |   |-- src/
+   |   |   |   |-- android/
+   |   |   |   |          /StatusBar.java
+   |   |   |   |-- ios/
+   |   |   |   |      /CDVStatusBar.h
+   |   |   |   |      /CDVStatusBar.m
+   |   |   |   |-- windows/
+   |   |   |   |          /StatusBarProxy.js
+   |   |   |   |-- wp/
+   |   |   |   |     /StatusBar.cs
+   |   |   |-- tests/
+   |   |   |        /plugin.xml
+   |   |   |        /tests.js
+   |   |   |-- www/
+   |   |   |      /statusbar.js
+   |   |-- cordova-plugin-whitelist/
+   |   |                           /CONTRIBUTING.md
+   |   |                           /LICENSE
+   |   |                           /NOTICE
+   |   |                           /package.json
+   |   |                           /plugin.xml
+   |   |                           /README.md
+   |   |                           /RELEASENOTES.md
+   |   |                           /whitelist.js
+   |   |   |-- src/
+   |   |       |-- android/
+   |   |       |          /WhitelistPlugin.java
+   |   |       |-- ios/
+   |   |       |      /CDVNavigationWhitelistPlugin.h
+   |   |       |      /CDVNavigationWhitelistPlugin.m
+   |   |-- ionic-plugin-keyboard/
+   |   |                        /LICENSE
+   |   |                        /package.json
+   |   |                        /plugin.xml
+   |   |                        /README.md
+   |       |-- src/
+   |       |   |-- android/
+   |       |   |          /IonicKeyboard.java
+   |       |   |-- blackberry10/
+   |       |   |               /index.js
+   |       |   |   |-- native/
+   |       |   |   |         /.cproject
+   |       |   |   |         /.project
+   |       |   |       |-- device/
+   |       |   |       |         /libKeyboard.so
+   |       |   |       |   |-- public/
+   |       |   |       |   |         /json_reader.o
+   |       |   |       |   |         /json_value.o
+   |       |   |       |   |         /json_writer.o
+   |       |   |       |   |         /plugin.o
+   |       |   |       |   |         /tokenizer.o
+   |       |   |       |   |-- src/
+   |       |   |       |   |      /CallKeyboard.o
+   |       |   |       |   |      /keyboard_js.o
+   |       |   |       |   |      /keyboard_ndk.o
+   |       |   |       |   |      /Logger.o
+   |       |   |       |-- public/
+   |       |   |       |         /json_batchallocator.h
+   |       |   |       |         /json_internalarray.inl
+   |       |   |       |         /json_internalmap.inl
+   |       |   |       |         /json_reader.cpp
+   |       |   |       |         /json_value.cpp
+   |       |   |       |         /json_valueiterator.inl
+   |       |   |       |         /json_writer.cpp
+   |       |   |       |         /plugin.cpp
+   |       |   |       |         /plugin.h
+   |       |   |       |         /tokenizer.cpp
+   |       |   |       |         /tokenizer.h
+   |       |   |       |   |-- json/
+   |       |   |       |   |       /autolink.h
+   |       |   |       |   |       /config.h
+   |       |   |       |   |       /features.h
+   |       |   |       |   |       /forwards.h
+   |       |   |       |   |       /json.h
+   |       |   |       |   |       /reader.h
+   |       |   |       |   |       /value.h
+   |       |   |       |   |       /writer.h
+   |       |   |       |-- simulator/
+   |       |   |       |            /libKeyboard.so
+   |       |   |       |   |-- public/
+   |       |   |       |   |         /json_reader.o
+   |       |   |       |   |         /json_value.o
+   |       |   |       |   |         /json_writer.o
+   |       |   |       |   |         /plugin.o
+   |       |   |       |   |         /tokenizer.o
+   |       |   |       |   |-- src/
+   |       |   |       |   |      /CallKeyboard.o
+   |       |   |       |   |      /keyboard_js.o
+   |       |   |       |   |      /keyboard_ndk.o
+   |       |   |       |   |      /Logger.o
+   |       |   |       |-- src/
+   |       |   |       |      /keyboard_js.cpp
+   |       |   |       |      /keyboard_js.hpp
+   |       |   |       |      /keyboard_ndk.cpp
+   |       |   |       |      /keyboard_ndk.hpp
+   |       |   |       |      /Logger.cpp
+   |       |   |       |      /Logger.hpp
+   |       |   |-- ios/
+   |       |   |      /IonicKeyboard.h
+   |       |   |      /IonicKeyboard.m
+   |       |   |      /UIWebViewExtension.h
+   |       |   |      /UIWebViewExtension.m
+   |       |   |-- windows/
+   |       |   |          /KeyboardProxy.js
+   |       |-- www/
+   |           |-- android/
+   |           |          /keyboard.js
+   |           |-- ios/
+   |           |      /keyboard.js
+   |-- scss/
+   |       /ionic.app.scss
+   |-- www/
+   |      /index.html
+       |-- css/
+       |      /style.css
+       |-- img/
+       |      /adam.jpg
+       |      /ben.png
+       |      /ionic.png
+       |      /max.png
+       |      /mike.png
+       |      /perry.png
+       |-- js/
+       |     /app.js
+       |     /controllers.js
+       |     /services.js
+       |-- lib/
+       |   |-- ionic/
+       |   |        /version.json
+       |       |-- css/
+       |       |      /ionic.css
+       |       |      /ionic.min.css
+       |       |-- fonts/
+       |       |        /ionicons.eot
+       |       |        /ionicons.svg
+       |       |        /ionicons.ttf
+       |       |        /ionicons.woff
+       |       |-- js/
+       |       |     /ionic-angular.js
+       |       |     /ionic-angular.min.js
+       |       |     /ionic.bundle.js
+       |       |     /ionic.bundle.min.js
+       |       |     /ionic.js
+       |       |     /ionic.min.js
+       |       |   |-- angular/
+       |       |   |          /angular-animate.js
+       |       |   |          /angular-animate.min.js
+       |       |   |          /angular-resource.js
+       |       |   |          /angular-resource.min.js
+       |       |   |          /angular-sanitize.js
+       |       |   |          /angular-sanitize.min.js
+       |       |   |          /angular.js
+       |       |   |          /angular.min.js
+       |       |   |-- angular-ui/
+       |       |   |             /angular-ui-router.js
+       |       |   |             /angular-ui-router.min.js
+       |       |-- scss/
+       |       |       /ionic.scss
+       |       |       /_action-sheet.scss
+       |       |       /_animations.scss
+       |       |       /_backdrop.scss
+       |       |       /_badge.scss
+       |       |       /_bar.scss
+       |       |       /_button-bar.scss
+       |       |       /_button.scss
+       |       |       /_checkbox.scss
+       |       |       /_form.scss
+       |       |       /_grid.scss
+       |       |       /_items.scss
+       |       |       /_list.scss
+       |       |       /_loading.scss
+       |       |       /_menu.scss
+       |       |       /_mixins.scss
+       |       |       /_modal.scss
+       |       |       /_platform.scss
+       |       |       /_popover.scss
+       |       |       /_popup.scss
+       |       |       /_progress.scss
+       |       |       /_radio.scss
+       |       |       /_range.scss
+       |       |       /_refresher.scss
+       |       |       /_reset.scss
+       |       |       /_scaffolding.scss
+       |       |       /_select.scss
+       |       |       /_slide-box.scss
+       |       |       /_spinner.scss
+       |       |       /_tabs.scss
+       |       |       /_toggle.scss
+       |       |       /_transitions.scss
+       |       |       /_type.scss
+       |       |       /_util.scss
+       |       |       /_variables.scss
+       |           |-- ionicons/
+       |           |           /ionicons.scss
+       |           |           /_ionicons-font.scss
+       |           |           /_ionicons-icons.scss
+       |           |           /_ionicons-variables.scss
+       |-- templates/
+       |            /chat-detail.html
+       |            /tab-account.html
+       |            /tab-chats.html
+       |            /tab-dash.html
+       |            /tabs.html
