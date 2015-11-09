@@ -559,6 +559,23 @@ myapp/
 ```
 
 
+## 服务器端
+
+./server
+
+安装相关包
+
+```
+cd server
+npm install
+node server
+```
+
+**测试REST 服务**
+
+- http://localhost:5000/sessions (for a list of conference sessions returned as a JSON document)
+- http://localhost:5000/sessions/1 (for information about a specific session )
+
 
 ## links
 
