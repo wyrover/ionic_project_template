@@ -31,8 +31,42 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     // Each state's controller can be found in controllers.js
     $stateProvider
 
+        .state('login', {
+        url: '/login',
+        cache: false,
+        templateUrl: 'templates/login.html',
+        controller: 'LoginCtrl'
+    })
+
+    .state('register', {
+        url: '/register',
+        cache: false,
+        templateUrl: 'templates/register.html',
+        controller: 'RegisterCtrl'
+    })
+
+    .state('about', {
+        url: '/tab/account/about',
+        cache: false,
+        templateUrl: 'templates/about.html',
+        controller: 'AboutCtrl'
+    })
+
+    .state('resetpassword', {
+        url: '/tab/account/resetpassword',
+        cache: false,
+        templateUrl: 'templates/resetpassword.html',
+        controller: 'ResetPasswordCtrl'
+    })
+
+    .state('list', {
+        url: '/list',
+        cache: false,
+        templateUrl: 'templates/list.html'
+    })
+
     // setup an abstract state for the tabs directive
-        .state('tab', {
+    .state('tab', {
         url: '/tab',
         abstract: true,
         templateUrl: 'templates/tabs.html'
@@ -51,23 +85,24 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     })
 
     .state('tab.chats', {
-            url: '/chats',
-            views: {
-                'tab-chats': {
-                    templateUrl: 'templates/tab-chats.html',
-                    controller: 'ChatsCtrl'
-                }
+        url: '/chats',
+        views: {
+            'tab-chats': {
+                templateUrl: 'templates/tab-chats.html',
+                controller: 'ChatsCtrl'
             }
-        })
-        .state('tab.chat-detail', {
-            url: '/chats/:chatId',
-            views: {
-                'tab-chats': {
-                    templateUrl: 'templates/chat-detail.html',
-                    controller: 'ChatDetailCtrl'
-                }
+        }
+    })
+
+    .state('tab.chat-detail', {
+        url: '/chats/:chatId',
+        views: {
+            'tab-chats': {
+                templateUrl: 'templates/chat-detail.html',
+                controller: 'ChatDetailCtrl'
             }
-        })
+        }
+    })
 
     .state('tab.account', {
         url: '/account',

@@ -1,5 +1,18 @@
 angular.module('starter.controllers', [])
 
+.controller('LoginCtrl', function($scope, $state) {
+    $scope.doLogin = function() {
+        alert('login');
+        //$state.go('tab', {}, {reload: true});
+    }
+
+
+})
+
+.controller('RegisterCtrl', function($scope) {
+
+})
+
 .controller('DashCtrl', function($scope) {})
 
 .controller('ChatsCtrl', function($scope, Chats) {

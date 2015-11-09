@@ -662,6 +662,12 @@ node server
 <ion-infinite-scroll on-infinite="">...</ion-infinite-scroll>
 ```
 
+内联模板 : script
+```
+<script type="text/ng-template" id="a.html">
+　　<p>This is the content of the template.</p>
+</script>
+```
 
 定制样式
 
@@ -676,4 +682,6 @@ node server
 
 - https://github.com/ccoenraets?tab=repositories
 - http://www.cnblogs.com/parry/p/issues_about_build_hybrid_app_with_ionic.html
-- http://www.cnblogs.com/powertoolsteam/p/4775059.html
+- http://www.cnblogs.com/powertoolsteam/p/4775059.html    项目完整流程
+- http://www.cnblogs.com/cube/p/4086645.html          使用内联模板
+-
