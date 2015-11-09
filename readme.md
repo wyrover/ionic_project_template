@@ -72,6 +72,13 @@ cordova run android
 ```
 
 
+在本机调试 SPA
+
+```
+cd myapp
+ionic serve
+```
+
 ## Ionic 项目目录
 
 ```
