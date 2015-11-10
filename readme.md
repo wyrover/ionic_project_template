@@ -705,12 +705,32 @@ node server
 - https://blog.nraboy.com/category/apache-cordova-2/page/2/
 - https://github.com/flavordaaave/ionic-better-structure        更好的项目目录结构
 - [AngularJS指令编写实用指南（一）](http://www.html-js.com/article/A-practical-guide-to-the-development-of-web-application-written-using-Angular-AngularJS-instruction-a)
+- [ngAnimate](https://github.com/Augus/ngAnimate)
+- [调试webview](https://developer.chrome.com/devtools/docs/remote-debugging#debugging-tabs)
+- [phonegap100](http://www.phonegap100.com/app.html)
+
+## 开源项目
+
+- [图虫日报](https://github.com/tuchong/daily)
+- [cnodejs-ionic](https://github.com/lanceli/cnodejs-ionic)
 
 
 ## angular 开发特点
 
 angular 使用路由连接控制器和模板，控制器负责和UI(模板)打交道，其他的东西（对象）被注射到控制器函数，在控制器里访问。
 $scope 可访问页面上的对象
+
+## angular 内建指令
+
+- ngApp
+- ngRepeat
+- ngIf
+- ngClick
+- ngInclude
+- ngClass
+- ngBind
+- ngSubmit
+- ngModel
 
 
 ### angular 创建自定义指令
@@ -721,6 +741,24 @@ $scope 可访问页面上的对象
 2. 一个元素上的属性（`<input type='text' date-picker/>`）
 3. 作为一个类（`<input type='text' class='date-picker'/>`）
 4. 作为注释（`<!--directive:date-picker-->`）
+
+- 'A': This only matches the attribute name
+- 'E': This only matches the element name
+- 'C': This only matches the class name
+
+``` javascript
+{
+  restrict    : 'AEC',              // 指令可在 element, attribute, class 出现
+  template    : '',                 // 字符串模板
+  templateUrl : '',                 // 如果字符串模板没有提供，那么使用文件模板
+  scope       : false, true of {},  // 是否创建一个新的子 scope 或者创建一个 isolated scope
+  transclude  : true,               //
+  controller  : fn,                 // 指令控制器
+  complie     : fn,                 // 处理 DOM 函数
+  link        : fn                  // 连接 scope 和指令
+}
+```
+
 
 ``` javascript
 var app = angular.module('myapp',[]);
