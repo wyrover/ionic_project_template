@@ -701,4 +701,23 @@ node server
 - http://www.cnblogs.com/xieyier/category/614439.html
 - https://github.com/zachsoft/gulp-angular-templatecache    生成 angular 模板缓存
 - https://thompsonemerson.github.io/ionic-collection/       ionic 教程
+- http://mcgivery.com/100-ionic-framework-resources/
+- https://blog.nraboy.com/category/apache-cordova-2/page/2/
 - https://github.com/flavordaaave/ionic-better-structure        更好的项目目录结构
+
+
+
+## angular 开发特点
+
+angular 使用路由连接控制器和模板，控制器负责和UI(模板)打交道，其他的东西（对象）被注射到控制器函数，在控制器里访问。
+$scope 可访问页面上的对象
+
+
+### angular 创建自定义指令
+
+一个Angular指令可能以四种形式出现：
+
+1. 一个新的HTML元素（`<date-picker></date-picker>`）
+2. 一个元素上的属性（`<input type='text' date-picker/>`）
+3. 作为一个类（`<input type='text' class='date-picker'/>`）
+4. 作为注释（`<!--directive:date-picker-->`）
