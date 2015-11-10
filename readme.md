@@ -704,7 +704,7 @@ node server
 - http://mcgivery.com/100-ionic-framework-resources/
 - https://blog.nraboy.com/category/apache-cordova-2/page/2/
 - https://github.com/flavordaaave/ionic-better-structure        更好的项目目录结构
-
+- [AngularJS指令编写实用指南（一）](http://www.html-js.com/article/A-practical-guide-to-the-development-of-web-application-written-using-Angular-AngularJS-instruction-a)
 
 
 ## angular 开发特点
@@ -721,3 +721,43 @@ $scope 可访问页面上的对象
 2. 一个元素上的属性（`<input type='text' date-picker/>`）
 3. 作为一个类（`<input type='text' class='date-picker'/>`）
 4. 作为注释（`<!--directive:date-picker-->`）
+
+``` javascript
+var app = angular.module('myapp',[]);
+
+app.directive('helloWorld',function(){
+    return {
+        restrict: 'AE',
+        replace: true,
+        template: '<h3>Hello World!</h3>'
+    }
+});
+```
+
+在上面的代码中，app.diretive()函数在我们的模块中注册了一个新的指令。这个函数的第一个参数是指令的名称。第二个参数是一个返回指令定义对象的函数。如果你的指令对额外的对象/服务(services)例如 $rootScope, $http 或者 $compile 有依赖，它们也可以在其中被注入。这个指令可以作为一个HTML元素来使用，如下所示：
+
+```
+<hello-world/>
+```
+或者：
+```
+<hello:world/>
+```
+或者作为一个属性来使用：
+```
+<div hello-world></div>
+```
+或者：
+```
+<div hello:world/>
+```
+
+如果你想要兼容HTML5，你可以在属性前面加上x-或者data-前缀。因此，下面的标记将会匹配helloWorld指令：
+
+```
+<div data‐hello‐world></div>
+```
+或者
+```
+<di vx‐hello‐world></div>
+```
